@@ -14,9 +14,11 @@ else
 fi
 cd ./3rdparty
 
+party_path=`pwd`
+
 # Dependency
 sudo apt-get install libssl-dev
-sudo apt- install unzip
+sudo apt-get install unzip
 sudo apt-get install build-essential cmake
 sudo apt-get install libboost-all-dev
 sudo apt-get install libglew-dev
@@ -50,7 +52,7 @@ else
     make
     sudo make install
     echo "Successfully installed Eigen 3.3.9"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # Pangolin
@@ -65,7 +67,7 @@ else
     make
     sudo make install
     echo "Successfully installed pangolin"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # fmt
@@ -80,7 +82,7 @@ else
     make
     sudo make install
     echo "Successfully installed fmt"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # Sophus
@@ -94,7 +96,7 @@ else
     cmake ..
     sudo make install
     echo "Successfully installed sophus"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # OpenCV 3.4.3
@@ -111,7 +113,7 @@ else
     make
     sudo make install
     echo "Successfully installed OpenCV 3.4.3"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # g2o
@@ -126,7 +128,7 @@ else
     make
     sudo make install
     echo "Successfully installed g2o"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # gflags
@@ -141,7 +143,7 @@ else
     make
     sudo make install
     echo "Successfully installed gflags"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # glog
@@ -156,7 +158,7 @@ else
     make
     sudo make install
     echo "Successfully installed glog"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # ceres-solver
@@ -171,7 +173,7 @@ else
     make
     sudo make install
     echo "Successfully installed ceres-solver"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # DBoW3
@@ -186,7 +188,7 @@ else
     make
     sudo make install
     echo "Successfully installed DBoW3"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # vtk 8.2.0
@@ -203,7 +205,7 @@ else
     make
     sudo make install
     echo "Successfully installed vtk 8.2.0"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # pcl 1.9.1
@@ -220,7 +222,7 @@ else
     make
     sudo make install
     echo "Successfully installed pcl 1.9.1"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
 
 # octomap
@@ -235,5 +237,5 @@ else
     make
     sudo make install
     echo "Successfully installed octomap"
-    cd ~/learn_slambook2/3rdparty
+    cd $party_path
 fi
